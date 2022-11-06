@@ -1,5 +1,6 @@
 import "./App.css";
-import ExpenseItem from "./components/ExpenseItem";
+import ExpenseItem from "./components/Expenses/ExpenseItem";
+import NewExpense from "./components/NewExpense/NewExpense";
 // ?Байвал нөхцөл шалгах
 // : Байхгүй бол
 
@@ -33,6 +34,8 @@ const expenses = [
 function App() {
   return (
     <div className="Bg">
+      <NewExpense />
+
       {/* <h2>test</h2> */}
       <ExpenseItem
         title={expenses[0].title}
